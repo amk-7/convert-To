@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.secret_key = "122222222"
 
-@app.route("/")
+@app.route("/home")
 def index():
     flash("null")
     return render_template("index.html")
