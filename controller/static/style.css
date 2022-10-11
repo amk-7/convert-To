@@ -1,0 +1,232 @@
+body {
+    background-color: rgb(2, 15, 25);
+    color: aliceblue;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 112px;
+}
+
+
+div {
+    margin: 6px 0px 6px 0px;
+}
+
+div#select_file_div{
+    margin-top: 32px;
+    display: flex;
+    text-align: center;
+}
+
+div#file_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#select_file_div > div, div#file_div{
+    margin: 0px 6px 0px 6px;
+}
+
+select {
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 32px;
+    background-color: aliceblue;
+}
+
+input#file_type_origin {
+    border: none;
+    height: 50px;
+    background-color: aliceblue;
+}
+
+
+
+input#convert {
+    margin: 32px;
+    padding: 16px;
+    width: 60%;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    border-radius: 64px;
+    background-color: white;
+    color: #0974d1;
+}
+
+select:hover, input:hover {
+    cursor: pointer;
+    border-color: #0974d1;
+    background-color: #b4c5d4;
+}
+
+.download {
+    background-color: #0974d1;
+}
+
+input#convert:hover {
+    background-color: #0974d1;
+    color: white;
+    border-color: #0974d1;
+}
+
+a {
+    padding: 12px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: gray;
+    border-radius: 32px;
+}
+
+.drop-zone {
+    max-width: 100%;
+    height: 200px;
+    width: 600px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed #0974d1;
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    h1 {
+        font-style: italic;
+        font-size: 50px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+
+    input#file_type_origin {
+        border: none;
+        height: 50px;
+        width: 400px;
+        background-color: aliceblue;
+    }
+
+    div#select_file_div{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+
+    div#select_file_div div{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .drop-zone {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+        color: #cccccc;
+        border: 4px dashed #0974d1;
+        border-radius: 10px;
+      }
+
+  }
+
+ 
+  @media (min-width: 700px)  and (max-width: 1000px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+
+    input#file_type_origin {
+        border: none;
+        height: 50px;
+        width: 600px;
+        background-color: aliceblue;
+    }
+
+    div#select_file_div{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+
+    div#select_file_div div{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+  
+  }
